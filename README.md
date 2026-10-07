@@ -1,5 +1,9 @@
 Trabalho realizado por: Hugo Nunes, número mecanográfico: 881942. Curso: Licenciatura em Informática. Data: 07/10/2026.
 
+Instituição: Instituto Superior Miguel Torga (ISMT).
+
+Unidade curricular: Programação Web.
+
 # Módulo 01 — Programação Web
 
 Cinco exercícios para praticar a estrutura, a semântica e as interações nativas de HTML5.
@@ -27,6 +31,12 @@ Cinco exercícios para praticar a estrutura, a semântica e as interações nati
 Abre [index.html](index.html) num navegador e escolhe um exercício. Não é necessária instalação nem servidor. Mantém as pastas e imagens nos seus locais. A documentação externa requer Internet; as ligações mailto dependem da aplicação de email configurada.
 
 Consulta [GUIA_ESTUDO.md](GUIA_ESTUDO.md) para preparar a apresentação.
+
+## Logótipo da instituição
+
+O logótipo oficial do ISMT ainda não foi fornecido. Coloca o ficheiro em `imagens/ismt.png`, criando a pasta `imagens` na raiz do projeto. Se a imagem tiver outro formato, conserva a extensão correspondente.
+
+Quando o ficheiro estiver disponível, adiciona ao cabeçalho do `index.html` principal uma imagem com caminho relativo `imagens/ismt.png` e `alt="Logótipo do Instituto Superior Miguel Torga"`. Define apenas a largura (por exemplo, `width="200"`) para manter as proporções originais, sem CSS ou JavaScript.
 
 ## Entrega
 
