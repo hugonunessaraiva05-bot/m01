@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hugo Nunes">
+    <title>Formulário de contacto profissional</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contacto profissional</h1>
+      <p>Formulário de demonstração de Hugo Nunes</p>
+    </header>
+    <main>
+      <h2>Enviar um pedido de demonstração</h2>
+      <p id="nota-formulario">Demonstração académica: a submissão abre uma página local. Não envia mensagens; os dados ficam no endereço e podem permanecer no histórico do navegador. Usa apenas dados fictícios.</p>
+      <form action="recebido.html" method="get" aria-describedby="nota-formulario">
+        <fieldset>
+          <legend>Dados de contacto</legend>
+          <p>
+            <label for="nome">Nome (obrigatório, 2 a 80 caracteres)</label>
+            <br>
+            <input type="text" id="nome" name="nome" autocomplete="name" required minlength="2" maxlength="80">
+          </p>
+          <p>
+            <label for="email">Email (obrigatório)</label>
+            <br>
+            <input type="email" id="email" name="email" autocomplete="email" required maxlength="120">
+          </p>
+          <p>
+            <label for="telefone">Telefone (opcional)</label>
+            <br>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[+]?[0-9]{9,15}" maxlength="16" aria-describedby="ajuda-telefone">
+          </p>
+          <p id="ajuda-telefone">Escreve entre 9 e 15 algarismos, sem espaços. Podes começar por + para indicar o código do país. Exemplos fictícios: 912345678 ou +351912345678. Também podes deixar o campo vazio.</p>
+        </fieldset>
+        <fieldset>
+          <legend>Pedido</legend>
+          <p>
+            <label for="tipo">Tipo de contacto (obrigatório)</label>
+            <br>
+            <select id="tipo" name="tipo" required>
+              <option value="">Seleciona uma opção</option>
+              <option value="informacao">Pedido de informação</option>
+              <option value="orcamento">Pedido de orçamento</option>
+              <option value="suporte">Suporte</option>
+            </select>
+          </p>
+          <p>
+            <label for="assunto">Assunto (obrigatório, 3 a 100 caracteres)</label>
+            <br>
+            <input type="text" id="assunto" name="assunto" required minlength="3" maxlength="100">
+          </p>
+          <p>
+            <label for="mensagem">Mensagem (obrigatória)</label>
+            <br>
+            <textarea id="mensagem" name="mensagem" rows="7" cols="40" required minlength="10" maxlength="2000" aria-describedby="ajuda-mensagem"></textarea>
+          </p>
+          <p id="ajuda-mensagem">Escreve entre 10 e 2000 caracteres.</p>
+          <p>
+            <input type="checkbox" id="demonstracao" name="demonstracao" value="confirmada" required>
+            <label for="demonstracao">Confirmo que estou a usar dados fictícios nesta demonstração (obrigatório)</label>
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Submeter demonstração</button>
+          <button type="reset">Limpar campos</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>Trabalho realizado por Hugo Nunes · Módulo 01 · 2026</p>
+      <p><a href="../index.html">Índice dos exercícios</a></p>
+    </footer>
+  </body>
+</html>
