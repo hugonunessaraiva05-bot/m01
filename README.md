@@ -1,4 +1,4 @@
-Trabalho realizado por: Hugo Nunes, número mecanográfico: 881942. Curso: Licenciatura em Informática. Data: 07/10/2026.
+Trabalho realizado por: *Hugo Nunes*, número mecanográfico: **881942**. Curso: Licenciatura em Informática. Data: 07/10/2026.
 
 Instituição: Instituto Superior Miguel Torga (ISMT).
 
