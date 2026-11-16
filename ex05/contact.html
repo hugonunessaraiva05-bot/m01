@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hugo Nunes">
-    <title>Contactos — Nunes Digital</title>
+    <title>Contactos — Saraiva Tech</title>
   </head>
   <body>
     <header>
-      <h1>Nunes Digital</h1>
-      <p>Soluções digitais para pequenos negócios · Empresa fictícia</p>
+      <h1>Saraiva Tech</h1>
+      <p>Reparação de computadores e assistência informática · Empresa fictícia</p>
     </header>
     <nav aria-label="Navegação principal">
       <ul>
@@ -21,9 +21,9 @@
       </ul>
     </nav>
     <main>
-      <h2>Fala connosco</h2>
-      <h3>Pedido de contacto</h3>
-      <p id="nota-formulario">Demonstração académica: a submissão abre uma página local. Não envia mensagens; os dados ficam no endereço e podem permanecer no histórico do navegador. Usa apenas dados fictícios.</p>
+      <h2>Pedido de assistência</h2>
+      <p>Identifica o equipamento, escolhe o serviço e descreve os sintomas para simular um pedido à Saraiva Tech.</p>
+      <p id="nota-formulario">Formulário demonstrativo, sem servidor de processamento. A submissão abre uma página local e não envia pedidos. Os valores ficam no endereço e podem permanecer no histórico do navegador. Usa apenas dados fictícios e não incluas palavras-passe.</p>
       <form action="recebido.html" method="get" aria-describedby="nota-formulario">
         <fieldset>
           <legend>Dados de contacto</legend>
@@ -33,43 +33,44 @@
             <input type="text" id="nome" name="nome" autocomplete="name" required minlength="2" maxlength="80">
           </p>
           <p>
-            <label for="email">Email (obrigatório)</label>
+            <label for="email">E-mail (obrigatório)</label>
             <br>
             <input type="email" id="email" name="email" autocomplete="email" required maxlength="120">
           </p>
-          <p>
-            <label for="telefone">Telefone (opcional)</label>
-            <br>
-            <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[+]?[0-9]{9,15}" maxlength="16" aria-describedby="ajuda-telefone">
-          </p>
-          <p id="ajuda-telefone">Escreve entre 9 e 15 algarismos, sem espaços. Podes começar por + para indicar o código do país. Exemplos fictícios: 912345678 ou +351912345678. Também podes deixar o campo vazio.</p>
         </fieldset>
         <fieldset>
-          <legend>Pedido</legend>
+          <legend>Equipamento e assistência</legend>
           <p>
-            <label for="tipo">Tipo de contacto (obrigatório)</label>
+            <label for="equipamento">Tipo de equipamento (obrigatório)</label>
             <br>
-            <select id="tipo" name="tipo" required>
-              <option value="">Seleciona uma opção</option>
-              <option value="informacao">Pedido de informação</option>
-              <option value="orcamento">Pedido de orçamento</option>
-              <option value="suporte">Suporte</option>
+            <select id="equipamento" name="equipamento" required>
+              <option value="">Seleciona o tipo de equipamento</option>
+              <option value="desktop">PC de secretária</option>
+              <option value="portatil">Computador portátil</option>
+              <option value="outro">Outro / Preciso de esclarecimentos</option>
             </select>
           </p>
           <p>
-            <label for="assunto">Assunto (obrigatório, 3 a 100 caracteres)</label>
+            <label for="servico">Serviço pretendido (obrigatório)</label>
             <br>
-            <input type="text" id="assunto" name="assunto" required minlength="3" maxlength="100">
+            <select id="servico" name="servico" required>
+              <option value="">Seleciona um serviço</option>
+              <option value="diagnostico">Diagnóstico e reparação</option>
+              <option value="software">Instalação de software</option>
+              <option value="limpeza">Limpeza interna</option>
+              <option value="montagem">Montagem de computador</option>
+              <option value="atualizacao">Atualização de computador</option>
+            </select>
           </p>
           <p>
-            <label for="mensagem">Mensagem (obrigatória)</label>
+            <label for="problema">Descrição do problema ou do pedido (obrigatória, 10 a 2000 caracteres)</label>
             <br>
-            <textarea id="mensagem" name="mensagem" rows="7" cols="40" required minlength="10" maxlength="2000" aria-describedby="ajuda-mensagem"></textarea>
+            <textarea id="problema" name="problema" rows="7" cols="40" required minlength="10" maxlength="2000" aria-describedby="ajuda-problema"></textarea>
           </p>
-          <p id="ajuda-mensagem">Escreve entre 10 e 2000 caracteres.</p>
+          <p id="ajuda-problema">Indica uma marca e um modelo fictícios, os sintomas, quando começaram e as mensagens de erro. Para uma montagem ou atualização, descreve a utilização pretendida.</p>
           <p>
             <input type="checkbox" id="demonstracao" name="demonstracao" value="confirmada" required>
-            <label for="demonstracao">Confirmo que estou a usar dados fictícios nesta demonstração (obrigatório)</label>
+            <label for="demonstracao">Confirmo que utilizo apenas dados fictícios nesta demonstração (obrigatório)</label>
           </p>
         </fieldset>
         <p>

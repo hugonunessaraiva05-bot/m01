@@ -9,11 +9,12 @@
   <body>
     <header>
       <h1>Contacto profissional</h1>
-      <p>Formulário de demonstração de Hugo Nunes</p>
+      <p>Formulário académico de Hugo Nunes · Programador em formação</p>
     </header>
     <main>
-      <h2>Enviar um pedido de demonstração</h2>
-      <p id="nota-formulario">Demonstração académica: a submissão abre uma página local. Não envia mensagens; os dados ficam no endereço e podem permanecer no histórico do navegador. Usa apenas dados fictícios.</p>
+      <h2>Pedido de contacto profissional</h2>
+      <p id="nota-formulario">Demonstração académica sem servidor de processamento: a submissão abre uma página local. Não envia mensagens; os dados ficam no endereço e podem permanecer no histórico do navegador. Usa apenas dados fictícios.</p>
+      <p>Experimenta um pedido de informação, uma proposta de projeto informático ou um pedido de apoio técnico. Para conhecer um exemplo do meu trabalho, visita o <a href="../ex05/index.html">website académico da Saraiva Tech</a>.</p>
       <form action="recebido.html" method="get" aria-describedby="nota-formulario">
         <fieldset>
           <legend>Dados de contacto</legend>
@@ -43,7 +44,7 @@
               <option value="">Seleciona uma opção</option>
               <option value="informacao">Pedido de informação</option>
               <option value="orcamento">Pedido de orçamento</option>
-              <option value="suporte">Suporte</option>
+              <option value="suporte">Apoio técnico</option>
             </select>
           </p>
           <p>
@@ -56,7 +57,7 @@
             <br>
             <textarea id="mensagem" name="mensagem" rows="7" cols="40" required minlength="10" maxlength="2000" aria-describedby="ajuda-mensagem"></textarea>
           </p>
-          <p id="ajuda-mensagem">Escreve entre 10 e 2000 caracteres.</p>
+          <p id="ajuda-mensagem">Escreve entre 10 e 2000 caracteres. Descreve o motivo do contacto. Para um projeto informático, indica os objetivos e o prazo pretendido; para apoio técnico, apresenta sintomas fictícios. Não incluas palavras-passe.</p>
           <p>
             <input type="checkbox" id="demonstracao" name="demonstracao" value="confirmada" required>
             <label for="demonstracao">Confirmo que estou a usar dados fictícios nesta demonstração (obrigatório)</label>

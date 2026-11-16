@@ -36,7 +36,7 @@ Os elementos são escolhidos pelo significado do conteúdo. No EX02, as competê
 
 ## Notícias — EX03
 
-O índice tem cinco `article`, cada um ligado a uma página completa. Cada notícia inclui título, autor, data, categoria e imagem. O `header` dentro de um artigo apresenta os dados dessa notícia.
+O índice tem cinco `article`, cada um ligado a uma página completa. As notícias fictícias abordam computadores reparáveis, programação Web, inteligência artificial, segurança digital e acessibilidade. Cada notícia inclui título, autor, data, categoria e imagem. O `header` dentro de um artigo apresenta os dados dessa notícia.
 
 `time datetime="2026-10-06"` associa o texto da data a um valor padronizado. As datas pertencem às notícias fictícias; são diferentes da data de revisão do trabalho.
 
@@ -60,7 +60,7 @@ O índice tem cinco `article`, cada um ligado a uma página completa. Cada notí
 
 `required` exige preenchimento. Uma opção com `value=""` não satisfaz um select obrigatório. `minlength` e `maxlength` limitam o comprimento dos textos. Não confirmam a veracidade dos dados.
 
-O padrão `[+]?[0-9]{9,15}` aceita um sinal + opcional e entre 9 e 15 algarismos, sem espaços. Como o telefone não tem required, pode ficar vazio. A validação ocorre no navegador; um servidor real teria de voltar a validar os dados.
+O padrão `[+]?[0-9]{9,15}` aceita um sinal + opcional e entre 9 e 15 algarismos, sem espaços. No EX04, o telefone não tem required e pode ficar vazio; o formulário do EX05 não inclui telefone. A validação ocorre no navegador; um servidor real teria de voltar a validar os dados.
 
 `aria-label` dá um nome acessível à navegação. `aria-describedby` associa um campo ou formulário à ajuda identificada por um ID. Não substituem os labels visíveis.
 
@@ -68,19 +68,19 @@ O destino local não processa nem envia mensagens. GET deixa os valores no ender
 
 ## Navegação e FAQ — EX05
 
-A mesma navegação liga as cinco páginas da empresa e aparece também no destino do formulário. `details` cria uma resposta que abre e fecha; `summary` é o título clicável. O atributo booleano `open` deixa a primeira resposta inicialmente aberta. Funciona sem JavaScript.
+O EX05 apresenta a Saraiva Tech, empresa fictícia de reparação de computadores e assistência informática. A mesma navegação liga as cinco páginas da empresa e aparece também no destino do formulário. `details` cria uma resposta que abre e fecha; `summary` é o título clicável. O atributo booleano `open` deixa a primeira resposta inicialmente aberta. Funciona sem JavaScript.
 
 ## Roteiro para a apresentação e testes manuais
 
 1. Abrir o índice e explicar a organização das pastas e dos caminhos relativos.
 2. No EX01, mostrar títulos, lista, imagem e ligação. No EX02, clicar nas quatro âncoras e no regresso ao topo.
 3. No EX03, abrir as cinco notícias e mostrar os dados e imagens.
-4. Em ambos os formulários, tentar submeter vazio. Depois testar email inválido, nome com um carácter, assunto com dois, mensagem com nove, telefone com letras ou espaços, seleção vazia e checkbox desmarcada.
-5. Preencher com Pessoa Teste, teste@example.com, +351912345678, um tipo selecionado, Pedido de teste e Esta é uma mensagem de teste. Marcar a checkbox e submeter; confirmar recebido.html e os parâmetros no endereço. Repetir com telefone vazio.
+4. Em ambos os formulários, tentar submeter vazio. Testar email inválido, nome com um carácter, descrição ou mensagem com nove caracteres, seleção vazia e checkbox desmarcada. No EX04, testar também assunto com dois caracteres e telefone com letras ou espaços. No EX05, confirmar as seleções obrigatórias de equipamento e serviço.
+5. No EX04, preencher com Pessoa Teste, teste@example.com, +351912345678, um tipo selecionado, Pedido de teste e Esta é uma mensagem de teste. No EX05, usar nome e e-mail fictícios, escolher equipamento e serviço e descrever um problema de teste. Marcar a checkbox e submeter; confirmar recebido.html e os parâmetros no endereço. No EX04, repetir com telefone vazio.
 6. Testar Limpar campos e a navegação com Tab, Shift+Tab, Enter e espaço nos controlos adequados.
 7. Percorrer as páginas da empresa e abrir e fechar a FAQ.
 
-Na revisão foram executados controlos estáticos das 17 páginas, 132 referências locais, IDs, âncoras, labels, ajudas, fechos dos elementos e ausência de CSS e JavaScript. Foram confirmadas as cinco notícias e a navegação consistente da empresa. Os oito ficheiros de imagem foram mantidos sem alteração durante a revisão dos textos.
+Na revisão foram executados controlos estáticos das 17 páginas, referências locais, IDs, âncoras, labels, ajudas, fechos dos elementos e ausência de CSS e JavaScript. Foram confirmadas as cinco notícias e a navegação consistente da empresa. Os oito ficheiros de imagem foram mantidos sem alteração durante a revisão dos textos.
 
 Os testes de validação e submissão no navegador não foram executados: a ferramenta de navegador não estava disponível. Os controlos estáticos não substituem um validador completo de HTML5 ou os testes manuais acima.
 

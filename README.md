@@ -12,11 +12,11 @@ Cinco exercícios para praticar a estrutura, a semântica e as interações nati
 
 | Exercício | Solução |
 | --- | --- |
-| [EX01 — Página pessoal (L1)](ex01/index.html) | Apresentação, curso, temas de aprendizagem, imagem local, lista e ligações de contacto e recursos. |
-| [EX02 — Perfil semântico (L1)](ex02/index.html) | Biografia, competências em aprendizagem, projetos e contactos, com elementos semânticos e âncoras para as secções e o topo. |
-| [EX03 — Jornal tecnológico (L2)](ex03/index.html) | Cinco notícias com título, autor, data, categoria e imagem, ligadas a cinco páginas individuais. |
-| [EX04 — Formulário de contacto (L2)](ex04/index.html) | Nome, email, telefone opcional, tipo de contacto, assunto, mensagem e confirmação, com labels e validação HTML5. |
-| [EX05 — Website empresarial (L3)](ex05/index.html) | Início, sobre nós, serviços, contactos e FAQ, com navegação consistente e respostas que abrem e fecham. |
+| [EX01 — Página pessoal (L1)](ex01/index.html) | Página pessoal de Hugo Nunes, programador em formação, com curso, imagem local, lista de interesses e contactos. Apresenta o website académico desenvolvido para a empresa fictícia Saraiva Tech. |
+| [EX02 — Perfil semântico (L1)](ex02/index.html) | Perfil pessoal com biografia, competências em aprendizagem e projetos de informática, usando elementos semânticos e navegação interna por âncoras para as secções e o topo. |
+| [EX03 — Jornal tecnológico (L2)](ex03/index.html) | Jornal tecnológico com cinco notícias fictícias sobre computadores reparáveis, programação Web, inteligência artificial, segurança digital e acessibilidade. Cada notícia tem título, autor, data, categoria, imagem ilustrativa e página individual (bónus). |
+| [EX04 — Formulário de contacto (L2)](ex04/index.html) | Formulário demonstrativo de contacto profissional de Hugo Nunes, com nome, email, telefone opcional, tipo de contacto, assunto, mensagem e confirmação. Etiquetas associadas aos campos e validação nativa HTML5; sem envio real de pedidos. |
+| [EX05 — Website empresarial (L3)](ex05/index.html) | Website da empresa fictícia Saraiva Tech, especializada em reparação de computadores e assistência informática: apresentação, atendimento do diagnóstico à entrega, diagnóstico e reparação de PCs, instalação de software, limpeza interna, montagem e atualização de computadores. Formulário demonstrativo com etiquetas e validação nativa HTML5; FAQ como bónus sobre marcações, orçamentos e prazos. Menu consistente e ligações relativas, apenas com HTML5. |
 
 ## Decisões principais
 
